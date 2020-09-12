@@ -5,13 +5,25 @@
 }
 
 header {
-    margin: 100px 0;
+    margin: 100px 10%;
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
     .heading {
         float: left;
+        margin: 20px 0px 40px 0px;
+        h1 {
+            font-size: 36px;
+            line-height: 40px;
+            font-weight: 900;
+            font-family: 'PT Serif', serif;
+        }
     }
     
     .team-heading {
         float: right;
+        margin: 20px 0px 40px 20px;
         h3 {
             font-size: 18px;
             font-family: 'Poppins', sans-serif;
@@ -22,9 +34,72 @@ header {
         }
     }
     
-    h1 {
-        font-size: 36px;
-        font-family: 'PT Serif', serif;
+    
+}
+
+.section {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        .container-images {
+            .images {
+                span {
+                    
+                }
+            }
+        }
     }
 }
 
+.footer {
+    background-color: black;
+    color: blanchedalmond;
+    .name {
+        margin-left: 10px;
+        p {
+            padding: 10px 10px 10px 10px;
+        }
+    }
+}
+
+img {
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px -10px rgba(0, 0, 0, 0.40);
+    width: 300px;
+    height: 479px;
+}
+
+@media (min-width: 992px) {
+.header {
+    margin: 100px 0px;
+    max-width: 992px;
+}}
+
+@media (min-width: 992px) {
+.header .heading {
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}}
+@media (min-width: 992px) {
+.header .team-heading {
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}}
+
+@media (min-width: 992px) {
+.section .container {
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}}
+
+@media (min-width: 1200px) {
+.section .container {
+    max-width: 1200px;
+}}
