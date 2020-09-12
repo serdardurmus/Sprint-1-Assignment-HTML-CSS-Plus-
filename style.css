@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin: 100px 0;
+}
+header .heading {
+  float: left;
+}
+header .team-heading {
+  float: right;
+}
+header .team-heading h3 {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+header .team-heading p {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+header h1 {
+  font-size: 36px;
+  font-family: "PT Serif", serif;
+}
+
+/*# sourceMappingURL=style.css.map */
